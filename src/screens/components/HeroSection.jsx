@@ -6,7 +6,7 @@ function HeroSection() {
     <div>
       <div class="hero-section">
         <div class="headline">
-          <h1 class="medium-length-displa outfit-bold-black-68px">
+          <h1 class="medium-length-display outfit-bold-black-68px">
             Packages From
             <br />
             any Source
@@ -16,8 +16,8 @@ function HeroSection() {
           </h1>
           <p class="discover-open-source">
             Discover Open Source Packages For <br />
-            zarchitecture/s390x On Any Z Operating <br />
-            system&nbsp;&nbsp;In One Place.
+            Z architecture/s390x On Any Z Operating<br />
+            system In One Place.
           </p>
         </div>
         <img class="hero-image" src={heroPic} alt="hero image" />
@@ -31,9 +31,9 @@ function HeroSection() {
         <div class="sdt-tagline sdt">
           <p class="matches-developers-w valign-text-middle outfit-bold-black-68px">
             Matches Developers With <br />
-            best Open Source Software That
+            Best Open Source Software That
             <br />
-            meets Their Needs.
+            Meets Their Needs.
           </p>
         </div>
       </div>
