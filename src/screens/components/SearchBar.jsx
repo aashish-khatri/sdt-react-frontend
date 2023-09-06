@@ -7,20 +7,13 @@ function SearchBar({ setResults }) {
 
   const fetchData = (value) => {
     fetch(
-      "https://raw.githubusercontent.com/openmainframeproject/software-discovery-tool-data/d37ec20db63776674dae7beccfd95e152b0d1e55/data_files/IBMZ_container_registry.json"
+      `http://localhost:80/sdt/searchPackages?search_term=${value}&search_bit_flag=${255}`
     )
-      .then((response) => response.json())
-      .then((json) => {
-        const results = json.filter((software) => {
-          return (
-            value &&
-            software &&
-            software.packageName &&
-            software.packageName.toLowerCase().includes(value)
-          );
-        });
-        setResults(results);
-      });
+    .then((response)=>response.json())
+    .then((json)=>{
+      console.log(json.packages);
+      setResults(json.packages);
+    });
   };
 
   const handleChange = (value) => {
