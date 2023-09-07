@@ -2,12 +2,12 @@ function SearchList({ result }) {
   return (
     <div className="search-list">
       <div className="name-desc">
-        <div className="name">{result.packageName}</div>
-        <p className="decription">{result.description}</p>
+        <div className="name">{result[0]}</div>
+        <p className="decription">{result[1]}</p>
       </div>
       <div className="version-ostag">
         <div className="version-year-wrapper">
-          <div className="text-wrapper">version: {result.version}</div>
+          <div className="text-wrapper">version: {result[2]}</div>
           {/* <div class="text-wrapper">5 years ago</div> */}
         </div>
         {/* <div class="tag-wrapper">
